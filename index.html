@@ -316,7 +316,7 @@
   <main>
     <section id="real-h12-demos">
       <div class="wp-block-essential-blocks-advanced-heading  root-eb-advance-heading-rtt7z"><div class="eb-parent-wrapper eb-parent-eb-advance-heading-rtt7z "><div class="eb-advance-heading-wrapper eb-advance-heading-rtt7z button-1 undefined" data-id="eb-advance-heading-rtt7z">
-        <h2 style="margin-bottom: 0.3em; font-size: 2.0rem;">
+        <h2 style="margin-top: 0.3em;margin-bottom: 0.3em; font-size: 2.0rem;">
         <strong>Zero Shot Grasping Demos: Dexterous Hands + Humanoid</strong>
         </h2>
         <h3 class="eb-ah-subtitle" style="margin-top: 0; margin-bottom: 0.3em; font-size: 1.2rem;">
@@ -413,6 +413,65 @@
         </div>
     </section>
     
+
+	<section id="simulation-demos">
+      <div class="wp-block-essential-blocks-advanced-heading  root-eb-advance-heading-rtt7z"><div class="eb-parent-wrapper eb-parent-eb-advance-heading-rtt7z "><div class="eb-advance-heading-wrapper eb-advance-heading-rtt7z button-1 undefined" data-id="eb-advance-heading-rtt7z">
+        <h2 style="margin-bottom: 0.3em; font-size: 2.0rem;">
+        <strong>Zero Shot Grasping Demos: ManiSkill YCB Benchmark </strong>
+        </h2>
+        <h3 class="eb-ah-subtitle" style="margin-top: 0; margin-bottom: 0.3em; font-size: 1.2rem;">
+        Trained on Randomized Toys, Tested on Real-World Objects
+        </h3>
+
+       <div class="eb-ah-separator line"></div>
+        </div></div></div>
+        <p class="has-text-align-center"><strong>Grasping Demonstrations for Randomized Toys (Training Set)</strong></p>
+
+        <div class="wp-block-group is-layout-grid wp-container-core-group-is-layout-2994b392 wp-block-group-is-layout-grid">
+            <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_training/ball__traj_874.mp4"></video></figure>
+            <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_training/FivePrimitives__traj_143.mp4"></video></figure>
+            <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_training/ThreePrimitives_304_0.mp4"></video></figure>
+            <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_training/FivePrimitives__traj_254.mp4"></video></figure>
+            <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_training/FourPrimitives__traj_775.mp4"></video></figure>
+
+            <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_training/FivePrimitives__traj_143.mp4"></video></figure>
+            <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_training/FivePrimitives_378_0.mp4"></video></figure>
+            <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_training/ball__traj_902.mp4"></video></figure>
+
+			<figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_training/ring__traj_621.mp4"></video></figure>
+
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+    <svg width="80" height="60" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <!-- Shaft -->
+        <rect x="11" y="2" width="2" height="16"></rect>
+        <!-- Solid arrowhead -->
+        <polygon points="6,18 18,18 12,24"></polygon>
+    </svg>
+</div>
+        <p class="has-text-align-center"><strong>Zero-Shot Grasping on Real World Objects (Evaluation Set)</strong></p>
+                <div id="sim-eval-videos" class="wp-block-group is-layout-grid wp-container-core-group-is-layout-2994b392 wp-block-group-is-layout-grid">
+    <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_eval/bowl.mp4"></video></figure>
+    <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_eval/c_cups.mp4"></video></figure>
+    <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_eval/hammer.mp4"></video></figure>
+    <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_eval/large_clamp.mp4"></video></figure>
+    <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_eval/lemon.mp4"></video></figure>
+    <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_eval/mug.mp4"></video></figure>
+    <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_eval/mustard.mp4"></video></figure>
+    <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_eval/spoon.mp4"></video></figure>
+    <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_eval/tennis_ball.mp4"></video></figure>
+</div>
+
+<script>
+  // Only target videos inside #sim-videos
+  const videos = document.querySelectorAll('#sim-eval-videos video');
+  videos.forEach(video => {
+    video.playbackRate = 0.45; // set slower speed
+  });
+</script>
+
+    </section>
 
     <section id="background">
         <div class="wp-block-essential-blocks-advanced-heading root-eb-advance-heading-rtt7z">
@@ -745,6 +804,7 @@ To create randomized toys for learning generalizable grasping skills, we draw in
     <div class="eb-toc-wrapper " data-headers="[{&quot;level&quot;:3,&quot;content&quot;:&quot;Real and Sim Demos&quot;,&quot;text&quot;:&quot;Real and Sim Demos&quot;,&quot;link&quot;:&quot;real-and-sim-demos&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;Whole-Body + Vision-Language&quot;,&quot;text&quot;:&quot;Whole-Body + Vision-Language&quot;,&quot;link&quot;:&quot;whole-body-vision-language&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;LeVERB-Bench&quot;,&quot;text&quot;:&quot;LeVERB-Bench&quot;,&quot;link&quot;:&quot;leverb-bench&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;LeVERB-VL&quot;,&quot;text&quot;:&quot;LeVERB-VL&quot;,&quot;link&quot;:&quot;leverb-vl&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;LeVERB-A&quot;,&quot;text&quot;:&quot;LeVERB-A&quot;,&quot;link&quot;:&quot;leverb-a&quot;},{&quot;level&quot;:3,&quot;content&quot;:&quot;Results&quot;,&quot;text&quot;:&quot;Results&quot;,&quot;link&quot;:&quot;results&quot;}]" data-visible="[false,false,true,false,false,false]" data-delete-headers="[{&quot;label&quot;:&quot;Real and Sim Demos&quot;,&quot;value&quot;:&quot;real-and-sim-demos&quot;,&quot;isDelete&quot;:false},{&quot;label&quot;:&quot;Whole-Body + Vision-Language&quot;,&quot;value&quot;:&quot;whole-body-vision-language&quot;,&quot;isDelete&quot;:false},{&quot;label&quot;:&quot;LeVERB-Bench&quot;,&quot;value&quot;:&quot;leverb-bench&quot;,&quot;isDelete&quot;:false},{&quot;label&quot;:&quot;LeVERB-VL&quot;,&quot;value&quot;:&quot;leverb-vl&quot;,&quot;isDelete&quot;:false},{&quot;label&quot;:&quot;LeVERB-A&quot;,&quot;value&quot;:&quot;leverb-a&quot;,&quot;isDelete&quot;:false},{&quot;label&quot;:&quot;Results&quot;,&quot;value&quot;:&quot;results&quot;,&quot;isDelete&quot;:false}]" data-smooth="true" data-top-offset=""><div class="eb-toc__list-wrap"><ol class="eb-toc__list">
     <li><a href="#real-h12-demos">Zero Shot Grasping Demos: Dexterous Hands + Humanoid</a></li>
     <li><a href="#real-franka-demos">Zero Shot Grasping Demos: Franka DROID</a></li>
+	<li><a href="#simulation-demos">Zero Shot Grasping Demos: ManiSkill YCB Benchmark</a></li>
     <li><a href="#background">Background</a></li>
     <li><a href="#detection-pooling">Detection Pooling</a></li>
     <li><a href="#robot-toys">Creating Randomized Robot Toys</a></li>

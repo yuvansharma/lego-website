@@ -459,7 +459,7 @@
     </svg>
 </div>
         <p class="has-text-align-center"><strong>Zero-Shot Grasping on Real World Objects (Evaluation Set)</strong></p>
-                <div id="sim-eval-videos" class="wp-block-group is-layout-grid wp-container-core-group-is-layout-2994b392 wp-block-group-is-layout-grid">
+                <!-- <div id="sim-eval-videos" class="wp-block-group is-layout-grid wp-container-core-group-is-layout-2994b392 wp-block-group-is-layout-grid">
     <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_eval/bowl.mp4"></video></figure>
     <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_eval/c_cups.mp4"></video></figure>
     <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_eval/hammer.mp4"></video></figure>
@@ -469,15 +469,21 @@
     <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_eval/mustard.mp4"></video></figure>
     <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_eval/spoon.mp4"></video></figure>
     <figure class="wp-block-video small"><video autoplay loop muted src="static/videos/sim_eval/tennis_ball.mp4"></video></figure>
-</div>
+</div> -->
 
-<script>
+<figure class="wp-block-video">
+  <video autoplay loop muted >
+    <source src="static/videos/sim_eval_joint.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<!-- <script>
   // Only target videos inside #sim-videos
   const videos = document.querySelectorAll('#sim-eval-videos video');
   videos.forEach(video => {
     video.playbackRate = 0.45; // set slower speed
   });
-</script>
+</script> -->
 
     </section>
 
